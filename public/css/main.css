@@ -1,0 +1,240 @@
+
+body{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container-link{
+    width: 30%;
+}
+
+.container-main{
+    width: 98%;
+    margin: 2em auto;
+    border-radius: 5px;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+}
+
+.container-conteudo-aside{
+    width: 30%;
+}
+
+.container-conteudo-principal{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.envie-sua-foto{
+    width: 100%;
+    margin: 1em 0;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border:solid 2px black;
+}
+
+.flex-escola{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-status{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.status-ativo{
+    background-color: rgb(18, 165, 50);
+    padding: 1em 1em;
+    text-align: center;
+    color:white;
+    font-family: bold;
+    border-radius: 5px;
+}
+
+.status-inativo{
+    padding: 1em 1em;
+    text-align: center;
+    color:white;
+    font-family: bold;
+    background-color: rgb(77, 75, 76);
+    border-radius: 5px;
+}
+
+.container-info-escola{
+    margin: 1em 0;
+    background-color: white;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 1em;
+}
+
+.texto-info-escola{
+    width: 30%;
+}
+
+.titulo-info-escola{
+    color:rgb(0, 161, 38);
+    font-weight: bold;
+}
+
+
+.subtitlo-info-escola{
+    font-size: 20px;
+    color:black;
+    font-weight: bold;
+}
+
+.container-gestor{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin:1em 0;
+}
+
+.container-gestor>img{
+    width: 50px;
+}
+
+.titulo-gestor{
+    color:royalblue;
+    font-weight: bold;
+}
+
+.subtitlo-gestor{
+    font-weight: bold;
+}
+.container-texto-gestor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:2em;
+    padding: 10px;
+}
+
+.texto-gestor{
+    line-height: 0;
+}
+
+table, th, td {
+    border:1px solid black;
+    margin: 1em 0;
+}
+
+
+td{
+    height: 50px;
+}
+tr:nth-child(odd){
+    background-color: #ffffff;
+}
+
+.container-financeiro{
+    border-bottom: solid 4px black;
+    display: flex;
+    padding: 0 2em;
+}
+
+.item-financeiro{
+    padding:0.5em;
+    transform: skew(10deg);
+    background-color: #c8c8c8;
+    border:solid 1px black;
+}
+
+.container-contratos{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 1em;
+}
+
+.titulo-contratos{
+    color:rgb(18, 165, 50);
+    font-weight: bold;
+}
+
+.subtitlo-contratos{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.repasses{
+    color:#db921d;
+}
+
+.vagas{
+    background-color: white;
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px gray solid;
+    margin-top: 15em;
+}
+
+.titulo-vagas{
+    border-bottom: black 2px solid;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.subtitlo-vagas{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tipo_de_escola{
+    background-color: white;
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px gray solid;
+    margin-top:2em;
+}
+
+.tipo_escola{
+    padding: 0;
+    width: 100px;
+    margin: 1em auto;
+    background-color: #c8c8c8;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+.selecionado{
+    background-color: rgb(18, 165, 50);
+    color:white;
+}
+
+.status-financeiro{
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border: 1px gray solid;
+    margin-top:52em;
+}
+
+.adimplente{
+    background-color: rgb(18, 165, 50);
+    color:white;
+    width: 90%;
+    text-align: center;
+    margin: 1em auto;
+
+}
