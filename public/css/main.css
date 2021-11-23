@@ -5,6 +5,15 @@ body{
     box-sizing: border-box;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+a{
+    font-weight: bold;
+    font-size: 24px;
+    color: royalblue;
+    text-decoration: none;
+    margin: 1em;
+}
+
 .container-link{
     width: 30%;
 }
@@ -56,7 +65,7 @@ body{
     padding: 1em 1em;
     text-align: center;
     color:white;
-    font-family: bold;
+    font-weight: bold;
     border-radius: 5px;
 }
 
@@ -237,4 +246,40 @@ tr:nth-child(odd){
     text-align: center;
     margin: 1em auto;
 
+}
+
+.container-main-index{
+    width: 98%;
+    margin: 0 auto;
+    max-width: 1500px;
+    background-color: rgb(238, 238, 238);
+}
+
+.container-conteudo-index{
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    padding: 1em;
+    margin: 2em auto;
+    border:solid 2px black;
+}
+
+.subtitulo-index{
+    color:rgb(0, 161, 38);
+    text-align: center;
+}
+
+.botao-index{
+    background-color: rgb(0, 161, 38);
+    border:none;
+    width: 100%;
+    padding: 0.5em 0;
+    color: white;
+    font-weight: bold;
+    cursor:pointer;
+    font-size: 20px;
+    border-radius:5px;
+}
+
+.botao-index:hover{
+    background-color: rgb(1, 114, 27);
 }

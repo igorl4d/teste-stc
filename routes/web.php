@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\indexController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,4 +17,4 @@ use App\Http\Controllers\indexController;
 
 Route::get('/', [indexController::class, 'index'])->name('index');
 
-Route::post("/acessar/{nome}", [indexController::class, 'acessar'])->name('acessar');
+Route::post("/acessar/{codigo}", [indexController::class, 'acessar'])->name('acessar');

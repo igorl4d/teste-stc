@@ -8,18 +8,22 @@
     <title>HOME</title>
 </head>
 <body>
-    <h1>Home</h1>
-
-    @foreach ($info_escolas as $info_escola)
     
-    <h2>Acessar Escola = {{ $info_escola->nome }}<h2>
-    <form method = 'post' action ="{{route('acessar', $info_escola->nome)}}">
-    {{ csrf_field() }}
+    <div class = 'container-main-index'>
+        <h1 class = 'titulo-index'>Home</h1>
+        @foreach ($info_escolas as $info_escola)
+        
+        <div class = container-conteudo-index>
 
-    <button type ='submit' name = 'acesar'>acessar</button>
-    </form>
-
-    @endforeach
-    
+            <h2 class = 'subtitulo-index'>{{ $info_escola->nome }}<h2>
+            <form method = 'post' action ="{{route('acessar', $info_escola->codigo)}}">
+            {{ csrf_field() }}
+            <p>Acessar Escola</p>
+            <button type ='submit' name = 'acesar' class = 'botao-index'>Acessar</button>
+            </form>
+        
+        </div>
+        @endforeach
+    </div>
 </body>
 </html>

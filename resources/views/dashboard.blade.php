@@ -13,7 +13,7 @@
     <main>
         <div class='container-main'>
             <aside class='container-link'>
-                <a href='/'>|Home /</a>
+                <a href='/'>Home /</a>
             </aside>
 
             <div class='container-conteudo-principal'>
