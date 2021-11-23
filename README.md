@@ -26,9 +26,9 @@ php artisan serve
 
 ## Descrição do Código:
 
-Ao inicializar a aplicação, essa deve levar o usuário a uma página de *HOME*, onde pode se selocionar as informações da escola que se quer vizualizar (Isso não foi pedido no texto, mas foi feito para ajudar na hora do desenvolvimento)
+Ao inicializar a aplicação, essa deve levar o usuário a uma página de *HOME*, onde pode se selocionar as informações da escola que se quer vizualizar (Isso não foi pedido no teste, mas foi feito para ajudar na hora do desenvolvimento)
 
-Ao clicar no botão o usuário é redirecionado a rota *"/acessar"*, a qual recebe como parámetro o código do cólegio para acessar as informações do banco de dado. A rota do colégio Liceu Maranhense é, portanto */acessar/88*, por exemplo.
+Ao clicar no botão o usuário é redirecionado a rota *"/acessar"*, a qual recebe como parámetro o código do cólegio para acessar as informações do banco de dado. A rota do colégio Liceu Maranhense é */acessar/88*, por exemplo.
 
 Para se acessar a API, basta utilizar a rota *"api/acessar/{codigo}"*, onde codigo é também o codigo do colégio. A API responde com um JSON com todas as informações utilizadas na criação da view.
 
