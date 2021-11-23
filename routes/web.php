@@ -15,6 +15,6 @@ use App\Http\Controllers\indexController;
 |
 */
 
-Route::get('/', [indexController::class, 'index'])->name('index');
+Route::any('/', [indexController::class, 'index'])->name('index');
 
 Route::post("/acessar/{codigo}", [indexController::class, 'acessar'])->name('acessar');

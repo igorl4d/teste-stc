@@ -1,66 +1,43 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Teste STC
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Teste para desenvolvedor júnior no STC. 
+<br>Para visualização a aplicação está em um deploy no link: https://teste-stc.herokuapp.com/ , recomendo utilizar modo anônimo para evitar problemas de segurança com alguns navagadores, como Crhome.
 
-## About Laravel
+## Descriçao do Teste:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+O teste era o desenvolvimento de uma API que teria como resposta um Json com informações de uma escola e uma Aplicação que mostra as informações de uma escola em uma View.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Tecnologias Usadas:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- PHP
+- Laravel
+- Composer
+- HTML
+- CSS
+- Mysql
 
-## Learning Laravel
+## Usage:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Para usar a aplicação basta clonar o repositório na sua maquina e fazer as alterações no arquivo .env para conectar ao dump do banco de dados "escolas.sql". <br>Após isso, para inicializar a aplicação, digite no CMD:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+```
+php artisan serve
+```
 
-## Laravel Sponsors
+## Descrição do Código:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Ao inicializar a aplicação, essa deve levar o usuário a uma página de *HOME*, onde pode se selocionar as informações da escola que se quer vizualizar (Isso não foi pedido no texto, mas foi feito para ajudar na hora do desenvolvimento)
 
-### Premium Partners
+Ao clicar no botão o usuário é redirecionado a rota *"/acessar"*, a qual recebe como parámetro o código do cólegio para acessar as informações do banco de dado. A rota do colégio Liceu Maranhense é, portanto */acessar/88*, por exemplo.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-- **[Romega Software](https://romegasoftware.com)**
+Para se acessar a API, basta utilizar a rota *"api/acessar/{codigo}"*, onde codigo é também o codigo do colégio. A API responde com um JSON com todas as informações utilizadas na criação da view.
 
-## Contributing
+## Considerações Finais:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Fiz a conversão dos arquivos ".xls" mandados para um dump de uma database para trabalhar mais facilmente, o arquivo se encontra na root como "escola.sql", nesse banco de dados cada arquivo ocupou uma tabela, sendo o código de imovél do colégio usado como a chave principal para realização de querys, tendo em vista que ela se repete em todos os arquivos.
 
-## Code of Conduct
+Algumas informações não foram disponibilizadas nos arquivos ".xls", como o telefone da escola, portanto esses campos ficaram em branco na aplicação. Também não tinha certeza de o que alguns campos signifcavam, pois havia uma divergência entre o modelo enviado e as informações nos arquivos, por exemplo, constava como Gestor Geral nos arquivos ".xls" e como Gestor Principal no modelo, para essas situações eu utilizei o bom senso. 
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Por fim, agradeço pela oportunidade de participar do processo, devido ao tempo e pela falta de experiência com a linguagem o projeto não ficou da forma que eu gostaria, mas sigo grato pela experiência e pela oportunidade de aprender.
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
